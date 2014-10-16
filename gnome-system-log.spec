@@ -2,8 +2,8 @@
 
 Summary:	GNOME System log utility
 Name:		gnome-system-log
-Version:	3.6.1
-Release:	7
+Version:	3.9.90
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Url:		http://www.gnome.org
@@ -23,7 +23,7 @@ Gnome System log utility.
 %setup -q
 
 %build
-%configure2_5x \
+%configure \
 	--disable-schemas-compile
 %make
 
@@ -63,5 +63,6 @@ ln -s /usr/bin/consolehelper %{buildroot}%{_bindir}/gnome-system-log
 %{_datadir}/glib-2.0/schemas/org.gnome.gnome-system-log.gschema.xml
 %{_datadir}/applications/%{name}.desktop
 %{_iconsdir}/hicolor/*/apps/logview.png
+%{_iconsdir}/HighContrast/*/apps/logview.png
 %{_mandir}/man1/%{name}.1.*
 
