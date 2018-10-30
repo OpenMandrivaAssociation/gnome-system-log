@@ -4,7 +4,7 @@
 Summary:	GNOME System log utility
 Name:		gnome-system-log
 Version:	3.9.90
-Release:	5
+Release:	6
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Url:		http://www.gnome.org
