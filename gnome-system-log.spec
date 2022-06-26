@@ -26,10 +26,10 @@ Gnome System log utility.
 %build
 %configure \
 	--disable-schemas-compile
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 # make gnome-system-log use consolehelper until it starts using polkit
 mkdir -p %{buildroot}%{_sysconfdir}/pam.d
@@ -48,9 +48,6 @@ SESSION=true
 FALLBACK=true
 EOF
 
-mkdir -p %{buildroot}%{_sbindir}
-mv %{buildroot}%{_bindir}/gnome-system-log %{buildroot}%{_sbindir}
-ln -s /usr/bin/consolehelper %{buildroot}%{_bindir}/gnome-system-log
 
 %find_lang %{name} --with-gnome
 
