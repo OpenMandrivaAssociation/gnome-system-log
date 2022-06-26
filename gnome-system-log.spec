@@ -4,7 +4,7 @@
 Summary:	GNOME System log utility
 Name:		gnome-system-log
 Version:	3.9.90
-Release:	6
+Release:	7
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Url:		http://www.gnome.org
@@ -59,7 +59,6 @@ ln -s /usr/bin/consolehelper %{buildroot}%{_bindir}/gnome-system-log
 %{_sysconfdir}/pam.d/gnome-system-log
 %{_sysconfdir}/security/console.apps/gnome-system-log
 %{_bindir}/*
-%{_sbindir}/%{name}
 %{_datadir}/GConf/gsettings/logview.convert
 %{_datadir}/glib-2.0/schemas/org.gnome.gnome-system-log.gschema.xml
 %{_datadir}/applications/%{name}.desktop
