@@ -7,7 +7,7 @@ Version:	3.9.90
 Release:	8
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
-Url:		http://www.gnome.org
+Url:		https://www.gnome.org
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	intltool
 BuildRequires:	itstool
